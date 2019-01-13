@@ -1,11 +1,11 @@
 # baseconvert
-Commandline tool to convert a number between binary, decimal, and hexadecimal
+Commandline tool to convert a number between binary, decimal, octal, and hexadecimal
 
 Usage:
 
 $baseconvert [number] [base of original number] [base to convert original number to]
 
-options: d, b, h
+options: d, b, h, o
 
 To convert 12 (base 10) to binary:
 
