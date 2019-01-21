@@ -12,76 +12,76 @@ args = parser.parse_args()
 
 def d_to_b(number):
   try:
-    print('>> ' + bin(int(number))[2:])
+    print(bin(int(number))[2:])
   except ValueError:
     print('ValueError: input number is not base 10 integer')
     
 def b_to_d(number):
   try:
-    print('>> ' + str(int(str(number), 2)))
+    print(str(int(str(number), 2)))
   except ValueError:
     print('ValueError: input number is not binary')
     
 def d_to_h(number):
   try:
-    print('>> ' + hex(int(number))[2:])
+    print(hex(int(number))[2:])
   except ValueError:
     print('ValueError: input number is not base 10 integer')
     
 def b_to_h(number):
   try:
-    print('>> ' + hex(int(str(number), 2))[2:])
+    print(hex(int(str(number), 2))[2:])
   except ValueError:
     print('ValueErorr: input number is not binary')
 
 def h_to_d(number):
   try:
     deci = int(str(number), 16)
-    print('>> ' + str(deci))
+    print(str(deci))
   except ValueError:
     print('ValueError: input number is not valid hexadecimal')
 
 def h_to_b(number):
   try:
     deci = int(str(number), 16)
-    print('>> ' + bin(deci)[2:])
+    print(bin(deci)[2:])
   except ValueError:
     print('ValueError: input number is not valid hexadecimal')
 
 def d_to_o(number):
   try:
-    print('>> ' + str(oct(int(number))[2:]))
+    print(str(oct(int(number))[2:]))
   except ValueError:
     print('ValueError: input number not decimal integer')
 
 def o_to_d(number):
   try:
-    print('>> ' + str(int(number, 8)))
+    print(str(int(number, 8)))
   except ValueError:
     print('ValueError: input number not valid  octal')
 
 def b_to_o(number):
   try:
     deci = int(number, 2)
-    print('>> ' + str(oct(deci)[2:]))
+    print(str(oct(deci)[2:]))
   except ValueError:
     print('ValueError: input number is not base 2')
 
 def o_to_b(number):
   try:
-    print('>> ' + str(bin(int(str(number), 8))[2:]))
+    print(str(bin(int(str(number), 8))[2:]))
   except ValueError:
     print('ValueError: input number not base 8')
 
 def h_to_o(number):
   try:
-    print('>> ' + str(oct(int(number, 16))[2:]))
+    print(str(oct(int(number, 16))[2:]))
   except ValueError:
     print('ValueError: input number not valid hexadecimal')
 
 def o_to_h(number):
   try:
-    print('>> ' + str(hex(int(number, 8))[2:]))
+    print(str(hex(int(number, 8))[2:]))
   except ValueError:
     print('ValueError: input number not valid octal')
     
